@@ -38,7 +38,7 @@ Source1:        http://dist.codehaus.org/stax/jars/stax-1.2.0.pom
 Source2:        http://dist.codehaus.org/stax/jars/stax-api-1.0.1.pom
 Name:           bea-stax
 Version:        %{mainver}
-Release:        8%{?dist}
+Release:        9%{?dist}
 License:        ASL 1.1 and ASL 2.0
 Group:          Development/Libraries/Java
 BuildArch:      noarch
@@ -117,6 +117,9 @@ install -Dpm 644 %{SOURCE2} %{buildroot}%{_mavenpomdir}/JPP-%{name}-api.pom
 %doc %{_javadocdir}/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.0-9
+- Mass rebuild 2013-12-27
+
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.2.0-8
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
